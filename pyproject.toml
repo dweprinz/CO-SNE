@@ -1,12 +1,12 @@
 [build-system]
-requires = ["setuptools"]
+requires = ["setuptools>=69", "wheel"]          # wheel avoids another warning
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "cosne"
 version = "0.0.1"
-description = "CO-SNE: code from https://github.com/yunhuiguo/CO-SNE"
 requires-python = ">=3.11"
+description = "CO-SNE fork"
 dependencies = [
     "numpy",
     "pillow",
@@ -18,5 +18,6 @@ dependencies = [
     "geoopt @ git+https://github.com/geoopt/geoopt.git",
 ]
 
+# ---- key part ----
 [tool.setuptools]
-packages = ["hyptorch", "pvae"]
+packages = ["hyptorch", "pvae"]                 # nothing else gets packaged
