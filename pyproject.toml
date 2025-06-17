@@ -18,5 +18,5 @@ dependencies = [
     "geoopt @ git+https://github.com/geoopt/geoopt.git",
 ]
 
-[tool.setuptools.packages.find]
-include = ["hyptorch", "pvae"]
+[tool.setuptools]
+packages = ["hyptorch", "pvae"]
