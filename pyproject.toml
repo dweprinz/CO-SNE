@@ -7,7 +7,6 @@ name = "cosne"
 version = "0.0.1"
 description = "CO-SNE: code from https://github.com/yunhuiguo/CO-SNE"
 requires-python = ">=3.11"
-
 dependencies = [
     "numpy",
     "pillow",
@@ -18,3 +17,6 @@ dependencies = [
     "torchvision",
     "geoopt @ git+https://github.com/geoopt/geoopt.git",
 ]
+
+[tool.setuptools.packages.find]
+include = ["hyptorch*", "pvae*"]
