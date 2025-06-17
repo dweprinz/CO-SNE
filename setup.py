@@ -9,5 +9,5 @@ setup(
         "seaborn", "torch", "torchvision",
         "geoopt @ git+https://github.com/geoopt/geoopt.git",
     ],
-    python_requires=">=3.11",
+    python_requires=">=3.8",
 )
